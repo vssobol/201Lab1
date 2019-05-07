@@ -4,16 +4,27 @@
     <title>Lili Demo</title>
 
     <style>
-        .Lili {
+        *{
+            margin: 25px;
+        }
+
+        h1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #000321;
+            color: aliceblue;
+            color:
+        }
+
+        .Lili{
             position: absolute;
             top: 5px;
-            left: 150px;
+            left: 210px;
         }
     </style>
     </head>
 
     <body>
-        <h1>Lili Demo</h1>
+        <h1>Class 1 Lab</h1>
 
         <img class="Lili" src="https://file.toyhou.se/thumbnails/11801458_xYO.png">
 
@@ -25,28 +36,33 @@
             var answers = [];
 
             answers.name = prompt("Hi! Please provide your name or a nickname so we can start!");
-            document.write('<p>',"Hi! Please provide your name or a nickname so we can start! " + answers.name,'</p>');
+            document.write('<p style="background-color: aliceblue;">',
+            "Hi! Please provide your name or a nickname so we can start! " + answers.name,'</p>');
 
             answers.pet = prompt("Thank you, " + answers.name + ". What kind of pet do you have?");
-            document.write('<p>',"Thank you, " + answers.name + ". What kind of pet do you have? " + answers.pet,'</p>');
+            document.write('<p style="background-color: floralwhite;">',
+            "Thank you, " + answers.name + ". What kind of pet do you have? " + answers.pet,'</p>');
             
             answers.pet = answers.pet.toLowerCase();
 
             answers.gender = prompt("Cool! I like " + answers.pet + "s. Is your " + answers.pet + " a boy or a girl?");
-            document.write('<p>',"Cool! I like " + answers.pet + "s. Is your " + answers.pet + " a boy or a girl? " + answers.gender,'</p>');
+            document.write('<p style="background-color: lavender;">',
+            "Cool! I like " + answers.pet + "s. Is your " + answers.pet + " a boy or a girl? " + answers.gender,'</p>');
             
             answers.gender = answers.gender.toLowerCase();
             if(answers.gender === "boy"){
 
                 answers.petName = prompt("A " + answers.gender + ", huh? What's his name?");
-                document.write('<p>',"A " + answers.gender + ", huh? What's his name? " + answers.petName,'</p>');
+                document.write('<p style="background-color: mistyrose;">',
+                "A " + answers.gender + ", huh? What's his name? " + answers.petName,'</p>');
 
                 answers.gender = "him";
 
             } else{
 
                 answers.petName = prompt("A " + answers.gender + ", huh? What's her name?");
-                document.write('<p>',"A " + answers.gender + ", huh? What's her name? " + answers.petName,'</p>');
+                document.write('<p style="background-color: mistyrose;">',
+                "A " + answers.gender + ", huh? What's her name? " + answers.petName,'</p>');
 
                 answers.gender = "her";
 
@@ -54,7 +70,8 @@
 
             document.write('<hr>');
 
-            document.write('<p>',"Thank you for your answers, " + answers.name + "!",'<br>',
+            document.write('<p style="background-color: honeydew;">',
+                "Thank you for your answers, " + answers.name + "!",'<br>',
                 "Please also tell your " + answers.pet + ", " + answers.petName + ", that I love " + answers.gender + " : )",'</p>');
         
             answers.push;
